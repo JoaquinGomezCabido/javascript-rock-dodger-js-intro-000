@@ -138,11 +138,11 @@ function endGame() {
    var removeRocks = () => {
      for (let i = 0; i < ROCKS.length; i++) {
        GAME.removeChild(ROCKS[i])
-     }   
+     }
    }
 
    removeRocks()
-  
+
   window.removeEventListener('keydown', moveDodger)
 
   alert("YOU LOSE!");
