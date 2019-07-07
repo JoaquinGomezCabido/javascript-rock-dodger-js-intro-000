@@ -100,7 +100,6 @@ function createRock(x) {
      else if(positionToInteger(rock.style.top) > 20) {
        rock.style.top = `${positionToInteger(rock.style.top) + 4}px`
      }
-   }
 
     /**
      * But if the rock *has* reached the bottom of the GAME,
