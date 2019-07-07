@@ -100,7 +100,7 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
 
-     else if(top < 380) {
+     else if(positionToInteger(rock.style.top) < 380) {
        window.requestAnimationFrame(moveRock);
      }
 
@@ -109,7 +109,7 @@ function createRock(x) {
      * we should remove the rock from the DOM
      */
 
-     else if (top) === 380) {
+     else if (positionToInteger(rock.style.top) === 380) {
        rock.remove();
      }
   }
