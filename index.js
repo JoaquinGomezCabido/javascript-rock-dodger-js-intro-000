@@ -134,7 +134,11 @@ function createRock(x) {
  */
 function endGame() {
   gameInterval = null;
-  GAME.remove(ROCKS);
+
+  for (i = 0; l = ROCKS.length; i++) {
+    GAME.removeChild(ROCKS[i])
+  }
+
   GAME.remove(moveDodger);
   alert("YOU LOSE!");
 }
