@@ -92,7 +92,7 @@ function createRock(x) {
      */
 
      if(checkCollision(rock)) {
-       endGame()
+       endGame();
      }
 
     /**
@@ -133,7 +133,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  gameInterval = null;
+   clearInterval(gameInterval)
 
   for (let i = 0; i < ROCKS.length; i++) {
     GAME.removeChild(ROCKS[i])
