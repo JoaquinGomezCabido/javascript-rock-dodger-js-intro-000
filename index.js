@@ -108,7 +108,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  
+
 }
 
 function moveDodger(e) {
@@ -123,7 +123,7 @@ function moveDodger(e) {
 
    if(e.which === LEFT_ARROW) {
      moveDodgerLeft()
-   } else if (e.which === RIGHT_ARROW {
+   } else if (e.which === RIGHT_ARROW) {
      moveDodgerRight()
    })
 }
