@@ -139,7 +139,8 @@ function endGame() {
     GAME.removeChild(ROCKS[i])
   }
 
-  GAME.remove(moveDodger);
+  window.removeEventListener('keydown', moveDodger)
+  
   alert("YOU LOSE!");
 }
 
