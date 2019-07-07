@@ -137,7 +137,7 @@ function endGame() {
 
    var removeRocks = () => {
      for (let i = 0; i < ROCKS.length; i++) {
-       GAME.removeChild(ROCKS[i])
+       ROCKS[i].remove();
      }
    }
 
