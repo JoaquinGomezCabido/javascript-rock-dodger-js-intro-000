@@ -101,7 +101,7 @@ function createRock(x) {
      */
 
      else if(positionToInteger(rock.style.top) < 380) {
-       rock.style.top = `${positionToInteger(rock.style.top) + 2}px`
+       window.requestAnimationFrame(moveRock);
      }
 
     /**
