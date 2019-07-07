@@ -67,7 +67,7 @@ function createRock(x) {
   // Hmmm, why would we have used `var` here?
   var top = GAME_HEIGHT
 
-  rock.style.top = top
+  rock.style.top = 0
 
   /**
    * Now that we have a rock, we'll need to append
