@@ -133,6 +133,8 @@ function createRock(x) {
  */
 function endGame() {
 
+  $(GAME).remove(ROCKS);
+  $(GAME).remove(moveDodger);
 }
 
 function moveDodger(e) {
