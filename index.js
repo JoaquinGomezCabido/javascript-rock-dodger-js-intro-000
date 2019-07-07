@@ -135,6 +135,7 @@ function endGame() {
 
   $(GAME).remove(ROCKS);
   $(GAME).remove(moveDodger);
+  alert("YOU LOSE!");
 }
 
 function moveDodger(e) {
