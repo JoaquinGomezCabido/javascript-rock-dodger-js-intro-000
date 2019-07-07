@@ -143,9 +143,9 @@ function endGame() {
 
    removeRocks()
 
-  window.removeEventListener('keydown', moveDodger)
+   window.removeEventListener('keydown', moveDodger)
 
-  alert("YOU LOSE!");
+   alert("YOU LOSE!");
 }
 
 function moveDodger(e) {
