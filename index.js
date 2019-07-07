@@ -98,7 +98,7 @@ function createRock(x) {
      */
 
      else if(positionToInteger(rock.style.top) > 20) {
-       rock.style.top = `${positionToInteger(rock.style.top) - 1}px`
+       rock.style.top = `${positionToInteger(rock.style.top) - 2}px`
      }
 
     /**
