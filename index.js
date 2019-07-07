@@ -97,7 +97,7 @@ function createRock(x) {
      * the GAME, we want to move it again.
      */
 
-     else if(positionToInteger(rock.style.top) > 20) {
+     else if(positionToInteger(rock.style.top) < 380) {
        rock.style.top = `${positionToInteger(rock.style.top) + 2}px`
      }
 
