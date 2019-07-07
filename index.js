@@ -132,7 +132,7 @@ function createRock(x) {
  * Finally, alert "YOU LOSE!" to the player.
  */
 function endGame() {
-  gameInterval = null
+  gameInterval = null;
   $(GAME).remove(ROCKS);
   $(GAME).remove(moveDodger);
   alert("YOU LOSE!");
