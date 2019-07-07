@@ -65,7 +65,7 @@ function createRock(x) {
   rock.style.left = `${x}px`
 
   // Hmmm, why would we have used `var` here?
-  var top = 0
+  var top = GAME_HEIGHT
 
   rock.style.top = top
 
@@ -74,7 +74,7 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
 
-   $(rock).append(GAME);
+   $(GAME).append(rock);
 
   /**
    * This function moves the rock. (2 pixels at a time
@@ -88,15 +88,29 @@ function createRock(x) {
      * we should call endGame()
      */
 
+     if(checkCollision(rock)) {
+       endGame()
+     }
+
     /**
      * Otherwise, if the rock hasn't reached the bottom of
      * the GAME, we want to move it again.
      */
 
+     else {
+       if(positionToInteger(rock.style.top) > 20) {
+         rock.style.top = `${positionToInteger(rock.style.top) + 4}px`
+       }
+     }
+
     /**
      * But if the rock *has* reached the bottom of the GAME,
      * we should remove the rock from the DOM
      */
+
+     else if (positionToInteger(rock.style.top) === 20) {
+       $(GAME).remove(rock);
+     }
   }
 
   // We should kick of the animation of the rock around here
