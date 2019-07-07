@@ -65,7 +65,7 @@ function createRock(x) {
   rock.style.left = `${x}px`
 
   // Hmmm, why would we have used `var` here?
-  var top = GAME_HEIGHT
+  var top = 0
 
   rock.style.top = top
 
@@ -98,7 +98,7 @@ function createRock(x) {
      */
 
      else if(positionToInteger(rock.style.top) > 20) {
-       rock.style.top = `${positionToInteger(rock.style.top) - 2}px`
+       rock.style.top = `${positionToInteger(rock.style.top) + 2}px`
      }
 
     /**
