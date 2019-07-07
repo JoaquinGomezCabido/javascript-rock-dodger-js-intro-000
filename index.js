@@ -127,6 +127,7 @@ function moveDodgerLeft() {
    * This function should move DODGER to the left
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
+
 }
 
 function moveDodgerRight() {
@@ -135,6 +136,13 @@ function moveDodgerRight() {
    * This function should move DODGER to the right
    * (mabye 4 pixels?). Use window.requestAnimationFrame()!
    */
+
+   var rightNumbers = dodger.style.right.replace('px', '')
+   var right = parseInt(rightNumbers, 10)
+
+   if (right < GAME_WIDTH) {
+     dodger.style.right = `${right + 1}px`
+   }
 }
 
 /**
