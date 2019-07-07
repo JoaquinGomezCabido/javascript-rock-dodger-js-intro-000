@@ -74,7 +74,7 @@ function createRock(x) {
    * it to GAME and move it downwards.
    */
 
-   $(GAME).append(rock);
+   GAME.append(rock);
 
   /**
    * This function moves the rock. (2 pixels at a time
@@ -107,7 +107,7 @@ function createRock(x) {
      */
 
      else if (positionToInteger(rock.style.top) === 20) {
-       $(GAME).remove(rock);
+       GAME.remove(rock);
      }
   }
 
@@ -131,8 +131,8 @@ function createRock(x) {
  */
 function endGame() {
   gameInterval = null;
-  $(GAME).remove(ROCKS);
-  $(GAME).remove(moveDodger);
+  GAME.remove(ROCKS);
+  GAME.remove(moveDodger);
   alert("YOU LOSE!");
 }
 
